@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Icons</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* CUSTOMIZATION CONTROLS */
+        :root {
+            /* Icon size (change the pixel value) */
+            --icon-size: 24px;
+            
+            /* Space between icons (change the pixel value) */
+            --icon-spacing: 20px;
+            
+            /* Colors (use any CSS color value: hex, rgb, etc.) */
+            --icon-color: #7F7F7F;         /* Default icon color */
+            --icon-hover-color: #404040;   /* Color when hovering */
+            --icon-active-color: #C0C0C0;  /* Color when clicking */
+        }
+
+        /* Container styling */
+        .social-icons {
+            display: flex;
+            gap: var(--icon-spacing);
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Individual icon styling */
+        .social-icons a {
+            text-decoration: none;
+            color: var(--icon-color);
+            transition: color 0.3s ease;
+        }
+
+        .social-icons i, 
+        .social-icons svg {
+            font-size: var(--icon-size);
+            width: var(--icon-size);
+            height: var(--icon-size);
+        }
+
+        /* Hover and active states */
+        .social-icons a:hover {
+            color: var(--icon-hover-color);
+        }
+
+        .social-icons a:active {
+            color: var(--icon-active-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="social-icons">
+        <!-- Substack -->
+        <a href="https://substack.com/@viriexdeu" target="_blank" aria-label="Substack">
+            <svg viewBox="0 0 24 24" style="width: var(--icon-size); height: var(--icon-size);">
+                <path fill="currentColor" d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+            </svg>
+        </a>
+        <!-- X (Twitter) -->
+        <a href="https://x.com/viriexdeu" target="_blank" aria-label="X (Twitter)">
+            <i class="fab fa-x-twitter"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/viriexdeu/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <!-- Threads -->
+        <a href="https://www.threads.net/@viriexdeu" target="_blank" aria-label="Threads">
+            <i class="fab fa-threads"></i>
+        </a>
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@viriexdeu" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/viriexdeu/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <!-- Discord -->
+        <a href="https://discord.gg/XCTPFrrh" target="_blank" aria-label="Discord">
+            <i class="fab fa-discord"></i>
+        </a>
+    </div>
+</body>
+</html>
